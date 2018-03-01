@@ -1,0 +1,42 @@
+@import "../../styles";
+
+header {
+
+  background-color: $navBarBG;
+
+  ul {
+    padding: 0px;
+    height: 4rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+    .green-hover:hover {
+      background-color: $green-hover;
+    }
+    .orange-hover:hover {
+      background-color: $orange-hover;
+    }
+    .blue-hover:hover {
+      background-color: $blue-hover;
+    }
+
+    a {
+      height: 100%;
+      padding-top: 1rem;
+      font-family: $font-family-text;
+      width: 30%;
+      text-align: center;
+      justify-content: center;
+      color: #FFF;
+      text-decoration: none;
+      outline: none;
+
+      li {
+        width: 100%;
+
+        }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../../styles";
+
+$white: #FFF;
+
+.container {
+
+  display: flex;
+  align-content: center;
+
+  .content {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+
+    .centeredImg {
+      text-align: center;
+      align-content: center;
+
+      img {
+        padding: 1rem;
+        max-width: 16rem;
+        max-height: 16rem;
+        border-radius: 50%;
+      }
+    }
+
+    .text {
+      padding: 2rem;
+      font-family: $font-family-text;
+      text-align: center;
+      color: $white;
+    }
+
+  }
+}
+
+.blinking-caret {
+  font-weight: 900;
+  font-size: 2rem;
+  color: $white;
+  -webkit-animation: 2s blink step-end infinite;
+  -moz-animation: 2s blink step-end infinite;
+  -ms-animation: 2s blink step-end infinite;
+  -o-animation: 2s blink step-end infinite;
+  animation: 2s blink step-end infinite;
+}
+
+// Keyframes for the caret animation
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $white;
+  }
+}

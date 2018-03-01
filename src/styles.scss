@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+$base-color: #444444;
+$font-family-text: "source-sans-pro",
+                    "Helvetica Neue",
+                    Helvetica,
+                    Arial,
+                    sans-serif;
+$navBarBG: #555555;
+$green-hover: #3bc64e;
+$orange-hover: #d15a10;
+$blue-hover: #153ab5;
+
+body {
+
+    background-color: $base-color;
+    margin: 0px;
+    padding: 0px;
+}

@@ -1,0 +1,41 @@
+<div *ngIf="this.profile">
+  <div [@visibilityChanged]="visible" >
+    <div class="container">
+      <div class="content">
+        <div class="centeredImg">
+          <img [src]="this.profile.avatar_url"/>
+        </div>
+        <div class="text">
+          <h3>About Me<span class="blinking-caret">|</span></h3>
+          <br/>
+          <p>
+            I'm {{ getAge() }}-year old ICT engineering student, who likes coding
+            with modern tools. I like to take the iniative when I'm starting a
+            new project, and consider myself equal parts teamplayer and independent
+            developer.
+
+          </p>
+          <p>
+            Before my engineering studies, I studied a profession in vocational
+            school as a construction worker, but at the same time I knew that
+            it was not the job I wanted to do for the rest of my life, and that
+            is why I started learning to code.
+          </p>
+          <p>
+            I like to do a lot of programming in my free-time,
+            since hobby projects are the best way to learn about new things.
+            The best thing about starting a new project is when you get something
+            to work for the first time, and you see the software starting to take
+            the right shape. I've built home servers, an amplifier and a mini
+            keyboard for my computer, just to name a few. On the software side,
+            I like to do all kinds of mini apps/services on my free-time, just
+            to amuse myself or as a fun idea that I got from a friend.
+          </p>
+          <p>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
