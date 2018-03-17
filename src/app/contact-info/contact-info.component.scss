@@ -17,11 +17,11 @@
     }
 
     .github:hover {
-      filter: invert(.5) sepia(1) saturate(5) hue-rotate(320deg);
+      filter: invert(.5) sepia(0.5) saturate(10) hue-rotate(320deg);
     }
 
     .linkedIn:hover {
-      filter: invert(.5) sepia(1) saturate(5) hue-rotate(200deg);
+      filter: invert(.5) sepia(0.5) saturate(10) hue-rotate(200deg);
     }
   }
 }
@@ -34,16 +34,15 @@
 
   a {
     font-style: italic;
-    border: 3px solid $green;
     padding: 2rem;
-    color: $green;
+    background-color: $green;
+    color: $base-color;
     font-size: 2rem;
     font-family: $font-family-text;
     text-decoration: none;
 
     &:hover {
-      background-color: $green;
-      color: $base-color;
+      background-color: lighten($green, 10%);
     }
   }
 }
