@@ -1,6 +1,7 @@
 @import "../../styles";
 
-$white: #FFF;
+$regular-text: #FFF;
+$section-border-color: gray;
 
 .container {
 
@@ -24,69 +25,68 @@ $white: #FFF;
       }
     }
 
-    .text {
+    section {
+      border-top: 1px solid $section-border-color; 
       padding: 2rem;
       font-family: $font-family-text;
       text-align: center;
-      color: $white;
+      color: $regular-text;
+
+      .education {
+        p {
+          font-size: 1.2rem;font-size: 1.2rem;
+        }
+      }
+
+      .job {
+        list-style: none;
+        padding: 1rem;
+      }
+
+      .title {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .link {
+    display: inherit;
+    align-content: center;
+    justify-content: center;
+    padding: 1%;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+
+      &:hover {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+      }
+    }
+  }
+  
+  .email {
+    display: inherit;
+    align-content: center;
+    justify-content: center;
+    padding: 1%;
+    font-size: 5rem;
+    text-decoration-color: $regular-text;
+    
+    a {
+      color: $regular-text;
     }
 
-  }
-}
-
-.blinking-caret {
-  font-weight: 900;
-  font-size: 2rem;
-  color: $white;
-  -webkit-animation: 2s blink step-end infinite;
-  -moz-animation: 2s blink step-end infinite;
-  -ms-animation: 2s blink step-end infinite;
-  -o-animation: 2s blink step-end infinite;
-  animation: 2s blink step-end infinite;
-}
-
-// Keyframes for the caret animation
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $white;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $white;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $white;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $white;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: $white;
+    &:hover {
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+    }
   }
 }

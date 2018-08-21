@@ -20,7 +20,7 @@ export class AboutComponent implements OnInit {
 
   profile: any;
 
-  //Loads my GitHub's profile pic for the About Me section
+  // Loads my GitHub's profile pic for the About Me section
   ngOnInit() {
     this.gitService.getProfile()
       .subscribe( result => {

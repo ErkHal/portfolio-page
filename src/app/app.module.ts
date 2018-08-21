@@ -6,20 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { GithubService } from './github.service';
-import { ContactInfoComponent } from './contact-info/contact-info.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResumeComponent,
-    AboutComponent,
-    NavbarComponent,
-    ContactInfoComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
