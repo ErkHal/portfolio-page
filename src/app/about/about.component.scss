@@ -1,5 +1,7 @@
 @import "../../styles";
 
+$break-small: 1000px;
+
 $regular-text: #FFF;
 $section-border-color: gray;
 
@@ -46,8 +48,26 @@ $section-border-color: gray;
       .title {
         padding-bottom: 1rem;
       }
+
+      .skill-section {
+        
+        width: 100%;
+        .subheader {
+          padding-top: 1rem;
+        }
+      }
+
     }
   }
+}
+
+.flex {
+
+  @media screen and (max-width: $break-small) {
+    display: block;
+  }
+  display: flex;
+  justify-content: space-between;
 }
 
 .linksContainer {
@@ -60,6 +80,7 @@ $section-border-color: gray;
     align-content: center;
     justify-content: center;
     padding: 1%;
+    margin-bottom: 1.9rem;
 
     img {
       width: 5rem;

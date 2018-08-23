@@ -14,6 +14,7 @@ import { trigger, state, transition, style, animate } from '@angular/animations'
     ])
   ]
 })
+
 export class AboutComponent implements OnInit {
 
   constructor(private gitService: GithubService) { }
