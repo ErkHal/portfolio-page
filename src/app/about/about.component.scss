@@ -3,15 +3,19 @@
 $break-small: 1000px;
 
 $regular-text: #FFF;
-$section-border-color: gray;
+$dark-text: #333;
 
-.container {
-
-  display: flex;
-  align-content: center;
-
-  .content {
-    width: 100%;
+//Here are the text colors and background colors for all sections
+$first: #d2ffe8;
+$first-text: $dark-text;
+$second: #8bbabb;
+$second-text: $dark-text;
+$third: #6c7b95;
+$third-text: $regular-text;
+$fourth: #464159;
+$fourth-text: $regular-text;
+  
+.content {
     align-content: center;
     justify-content: center;
 
@@ -27,39 +31,47 @@ $section-border-color: gray;
       }
     }
 
+    .text {
+      flex: 1;
+      background-color: $first;
+      color: $first-text;
+    }
+
+    .education {
+      background-color: $second;
+      color: $second-text;
+      p {
+        font-size: 1.2rem;font-size: 1.2rem;
+      }
+    }
+
+    .job {
+      background-color: $third;
+      list-style: none;
+      padding: 1rem;
+      color: $third-text;
+    }
+
+    .skill-section {
+      background-color: $fourth;
+      color: $fourth-text;
+      width: 100%;
+      .subheader {
+        padding-top: 1rem;
+      }
+    }
+
     section {
-      border-top: 1px solid $section-border-color; 
       padding: 2rem;
       font-family: $font-family-text;
       text-align: center;
       color: $regular-text;
 
-      .education {
-        p {
-          font-size: 1.2rem;font-size: 1.2rem;
-        }
-      }
-
-      .job {
-        list-style: none;
-        padding: 1rem;
-      }
-
       .title {
         padding-bottom: 1rem;
       }
-
-      .skill-section {
-        
-        width: 100%;
-        .subheader {
-          padding-top: 1rem;
-        }
-      }
-
     }
   }
-}
 
 .flex {
 
@@ -99,15 +111,15 @@ $section-border-color: gray;
     justify-content: center;
     padding: 1%;
     font-size: 5rem;
-    text-decoration-color: $regular-text;
+    text-decoration-color: $first-text;
     
     a {
-      color: $regular-text;
+      color: $first-text;
     }
 
     &:hover {
       -webkit-filter: blur(5px);
-      filter: blur(5px);
+      filter: blur(3px);
     }
   }
 }
